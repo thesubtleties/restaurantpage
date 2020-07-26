@@ -1,0 +1,149 @@
+@import url("https://use.typekit.net/yft2qdu.css");
+html {
+    background: url(restaurant.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.restName {
+    color: white;
+    font-size: 8vh;
+    font-family: viktor-script, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 5px rgb(56, 56, 56);
+    grid-area: restname;
+    justify-self: center;
+    user-select: none;
+
+}
+.menuBar {
+    grid-area: menubar;
+    justify-self: center;
+    align-self: center;
+    display: inline-block;
+    
+
+    
+    
+}
+.menuLink {
+    display: inline-block;
+    font-size: 2.8vh;
+    background-color: rgba(0, 0, 0, 0.623);
+    color: rgb(235, 230, 230);
+    font-family: mongoose, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 3px;
+    line-height: 2.7vh;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    user-select: none;
+ 
+}
+
+.menuLink:hover {
+    box-shadow: 0px 0px 5px rgba(2, 2, 2, 0.377);
+    cursor: pointer;
+}
+
+.menuLink:active {
+    box-shadow: 0px 0px 8px rgba(2, 2, 2, 0.377);
+    cursor: pointer;
+
+}
+
+#content { 
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1.05fr 1fr 1fr;
+    grid-template-rows: 10% 5% 5% 60% 15%;
+    grid-template-areas: 
+        ". restname restname"
+        ". menubar menubar"
+        ". . ."
+        ". contentArea contentArea"
+        ". . .";
+}
+.contentArea {
+    background-color: rgba(0, 0, 0, 0.452);
+    color: white;
+    grid-area: contentArea;
+    margin-right: -10px;
+    border-radius: 4px;
+    font-size: 2.5vh;
+    font-family: reross-quadratic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.homePage {
+
+    font-size: 1.5vh;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        ". . ."
+        ". homeText ."
+        ". . .";
+    
+    min-height: 100%;
+
+}
+.homeText {
+grid-area: homeText;
+font-size: 2.5vh;
+font-family: reross-quadratic, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.menuPage {
+    font-size: 2.5vh;
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-template-rows: 5% 20% 1fr 1fr 5%;
+    grid-template-areas:
+        ". . . . ."
+        ". . menuTitle . ."
+        ". item1 item2 item3 ."
+        ". item4 item5 item6 ."   
+        ". . . . .";
+    min-height: 100%;
+    justify-items: center;
+    align-items: start;
+
+}
+
+#menuTitle {
+    grid-area: menuTitle;
+    align-self: start;
+    font-size: 3.5vh;
+}
+.menuItem {
+    text-align: center;
+
+}
+#item1 {
+    grid-area: item1;
+}
+#item2 {
+    grid-area: item2;
+}
+#item3 {
+    grid-area: item3;
+}
+#item4 {
+    grid-area: item4;
+}
+#item5 {
+    grid-area: item5;
+}
+#item6 {
+    grid-area: item6;
+}
